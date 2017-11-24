@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 全局静态配置 -->
+<root>
+	<!-- FTP服务器端口 -->
+    <ftpPort>21</ftpPort>
+    <!-- FTP服务器用户名 -->
+    <ftpUserName>dpc</ftpUserName>
+    <!-- FTP服务器密码 -->
+    <ftpUserPass>dpcsecret</ftpUserPass>
+    <!-- FTP文件接收相对路径 -->
+    <ftpFilePath>ftp</ftpFilePath>
+    <!-- 解码器线程数 -->
+    <decoderThreadMaxNum>30</decoderThreadMaxNum>
+    <!-- 本地文件定时删除器执行周期,单位小时 -->
+    <cleanerPeriod>12</cleanerPeriod>
+    <!-- 交互系统通信端口 -->
+    <socketPort>8088</socketPort>
+</root>

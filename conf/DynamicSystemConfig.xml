@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 全局配置 -->
+<root>
+    <!-- FTP文件删除超时时间，单位小时 -->
+    <ftpClearPeriod>48</ftpClearPeriod>
+    <!-- 中间数据删除超时时间，单位小时 -->
+    <middleResultPathClearPeriod>48</middleResultPathClearPeriod>
+    <!-- 集合预报分成员结果缓存时间，单位小时 -->
+    <ensembleCacheClearPeriod>12</ensembleCacheClearPeriod>
+    <!-- 是否是主节点 -->
+    <isMasterNode>true</isMasterNode>
+    <!-- FTP文件默认恢复时间 单位：小时 -->
+    <ftpRecoverPeriod>1</ftpRecoverPeriod>
+    <!-- 解码开关，当关闭时不进行解码及之后的操作-->
+    <decoderSwitch>true</decoderSwitch>
+    <!-- 写入开关，当关闭时不进行真实写入  -->
+    <writeSwitch>true</writeSwitch>
+    <!-- 数据写入模式，false为先缓存再写入  -->
+    <instantWriteSwitch>true</instantWriteSwitch>
+    <!-- 关闭系统时解码线程最长等待时间(单位:分钟) -->
+    <threadWaitTime>30</threadWaitTime>
+</root>
