@@ -65,4 +65,22 @@ public class StringUtil {
 			return normalizedPath.substring( startIndex );//得到familyName
 	}
 
+
+	public static String getStationFromRadarData(String filename){
+        //Get ID from a radar file.
+        int first_line =  filename.indexOf("_");
+        return filename.substring(0, first_line);
+    }
+
+    public static String getDateFromRadarData(String filename){
+	    //Get date as YYYYMM from a radar file.
+	    int first_line = filename.indexOf("_");
+	    return filename.substring(first_line+1, first_line+7);
+    }
+
+    public static void main(String[] args) {
+        String res = getDateFromRadarData("Z9200_20160427072400_CR");
+        System.out.println(res);
+    }
+
 }

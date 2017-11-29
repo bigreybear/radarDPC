@@ -97,7 +97,8 @@ public final class DPCFileCleaner extends Thread {
 						try {
 							if ( filesAndDirs[ i ].getName().compareToIgnoreCase( "dpc.log" ) != 0 )//避免删除日志目录时删除了当前的日志文件
 							{
-							    mw.wirteByFileName(nioFile.toString());
+//							    mw.writeByFileName(nioFile.toString());
+								mw.writeByRadarUnit();
 								Files.delete( nioFile );//使用Java 1.7的新类库删除文件，该方法可以根据各种情况抛出异常
 								logger.info( "文件" + filesAndDirs[ i ].getAbsolutePath() + "到达生命周期，进行删除!" );
 							}

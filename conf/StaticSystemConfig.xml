@@ -15,4 +15,5 @@
     <cleanerPeriod>12</cleanerPeriod>
     <!-- 交互系统通信端口 -->
     <socketPort>8088</socketPort>
+    <compactSrcDir>slimTestData</compactSrcDir>
 </root>

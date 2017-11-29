@@ -37,6 +37,7 @@ public class DPCConfig {
 	public static String ftpUserName = "dpc";//FTP用户名
 	public static String ftpUserPass = "dpcsecret";//FTP用户密码
 	public static String ftpFilePath = "ftp";//FTP文件接收相对路径
+    public static String compactSrcDir = "";//压缩FTP源文件的目录
 	
 	/**
 	 * 解码器相关配置
@@ -106,6 +107,10 @@ public class DPCConfig {
 			
 			socketPort = Integer.parseInt( root.getChild( "socketPort" ).getValue() );//交互系统SOCKET通信端口
 			logger.info( "更新 socketPort -> " + socketPort );
+
+			compactSrcDir = root.getChildText("compactSrcDir");
+			logger.info( "更新compact source directory -> " + compactSrcDir);
+
 		} catch ( JDOMException e ) {
 			logger.error( "读取静态配置文件" + STATIC_SYSTEM_CONFIG_FILENAME + "错误!" );
 		} catch ( IOException e ) {
